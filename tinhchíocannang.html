@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chi so can nang</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>nhap chieu cao</th>
+        <th>nhap can nang</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="cc"></td>
+        <td><input type="number" id="cn"></td>
+    </tr>
+</table>
+<br>
+<button onclick="tinh()">tinh toan</button>
+<p>ket qua: <span id="kq"></span></p>
+<script>
+    function tinh() {
+        let a = Number(document.getElementById("cc").value);
+        let b = Number(document.getElementById("cn").value);
+        let c = b/(a*a)
+        if  (c <18.5) {
+            document.getElementById("kq").innerText="ban thieu can"
+        } else
+            if (c < 25) {
+                document.getElementById("kq").innerText="ban binh thuong"
+            } else
+                if (c < 30) {
+                    document.getElementById("kq").innerText="ban thua can"
+                }
+                else {
+                    document.getElementById("kq").innerText="ban deo phai nguoi nua roi"
+                }
+    }
+</script>
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
